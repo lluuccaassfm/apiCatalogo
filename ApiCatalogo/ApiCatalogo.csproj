@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200406190216_Inicial.cs" />
+    <Compile Remove="Migrations\20200406190216_Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200406194038_CorrecaoBanco.cs" />
+    <Compile Remove="Migrations\20200406194038_CorrecaoBanco.Designer.cs" />
+    <Compile Remove="Migrations\20200406194236_BancoCerto.cs" />
+    <Compile Remove="Migrations\20200406194236_BancoCerto.Designer.cs" />
+    <Compile Remove="Migrations\20200406194410_Inicial.cs" />
+    <Compile Remove="Migrations\20200406194410_Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200406194647_CorrecaoTypePreco.cs" />
+    <Compile Remove="Migrations\20200406194647_CorrecaoTypePreco.Designer.cs" />
+    <Compile Remove="Migrations\20200406203317_Inical.cs" />
+    <Compile Remove="Migrations\20200406203317_Inical.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+
+</Project>
