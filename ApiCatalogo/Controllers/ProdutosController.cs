@@ -73,8 +73,7 @@ namespace ApiCatalogo.Controllers
         public ActionResult<Produto> Delete(int id)
         {
             var Produto = _context.Produtos.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
-            //var Produto = _context.Produtos.Find(id);
-
+            //var Produto = _context.Produtos.Find(id)
 
             if (Produto == null)
             {

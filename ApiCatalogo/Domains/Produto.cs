@@ -28,7 +28,7 @@ namespace ApiCatalogo.Domains
         [Column(TypeName = "datetime")]
         public DateTime DataCadastro { get; set; }
 
-        public Categoria Categoria { get; set; }
+        //public Categoria Categoria { get; set; }
         public int CategoriaId { get; set; }
     }
 }
